@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GoalsCVC" id="gTV-IL-0wX" customClass="GoalsCVC" customModule="Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="195"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DtH-JY-Xqu">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="195"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svh-iR-tuz">
+                        <rect key="frame" x="10" y="10" width="336" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdR-sy-ykg">
+                        <rect key="frame" x="10" y="41" width="336" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52L-sV-xpY">
+                        <rect key="frame" x="10" y="147" width="87" height="38"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="flash" title="10XP"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ac-4B-xQz">
+                        <rect key="frame" x="107" y="147" width="111.33333333333331" height="38"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="clock (1)" title="10 mins" imagePadding="5"/>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="svh-iR-tuz" secondAttribute="trailing" constant="10" id="0CO-Rq-TqA"/>
+                <constraint firstItem="52L-sV-xpY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="4nR-Xf-Npy"/>
+                <constraint firstAttribute="trailing" secondItem="DtH-JY-Xqu" secondAttribute="trailing" id="7zt-uL-qUj"/>
+                <constraint firstAttribute="bottom" secondItem="DtH-JY-Xqu" secondAttribute="bottom" id="AqE-4c-Pyq"/>
+                <constraint firstItem="svh-iR-tuz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="GJU-rJ-dvC"/>
+                <constraint firstAttribute="trailing" secondItem="qdR-sy-ykg" secondAttribute="trailing" constant="10" id="P7Q-Tt-9oh"/>
+                <constraint firstItem="qdR-sy-ykg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="PLB-lv-Nnq"/>
+                <constraint firstAttribute="bottom" secondItem="4Ac-4B-xQz" secondAttribute="bottom" constant="10" id="RVv-Hq-IU9"/>
+                <constraint firstItem="DtH-JY-Xqu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ReS-gj-xqK"/>
+                <constraint firstItem="svh-iR-tuz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="d3e-1y-Rde"/>
+                <constraint firstItem="DtH-JY-Xqu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eHJ-uz-ZNw"/>
+                <constraint firstAttribute="bottom" secondItem="52L-sV-xpY" secondAttribute="bottom" constant="10" id="kE7-wq-j6S"/>
+                <constraint firstItem="4Ac-4B-xQz" firstAttribute="leading" secondItem="52L-sV-xpY" secondAttribute="trailing" constant="10" id="uK9-gn-Rci"/>
+                <constraint firstItem="qdR-sy-ykg" firstAttribute="top" secondItem="svh-iR-tuz" secondAttribute="bottom" constant="10" id="wC5-Am-ttL"/>
+            </constraints>
+            <size key="customSize" width="356" height="195"/>
+            <connections>
+                <outlet property="HeadLabel" destination="svh-iR-tuz" id="KzH-4g-LYI"/>
+                <outlet property="Imageview" destination="DtH-JY-Xqu" id="taa-O9-42h"/>
+                <outlet property="SubtitleLabel" destination="qdR-sy-ykg" id="VPH-tE-km4"/>
+            </connections>
+            <point key="canvasLocation" x="251.90839694656486" y="44.718309859154935"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="clock (1)" width="24" height="24"/>
+        <image name="flash" width="24" height="24"/>
+    </resources>
+</document>
